@@ -9,15 +9,15 @@ package mx.angellore.other
 
 object FizzBuzz extends App {
 
-  for (i <- 1 to 100) {
-    if ((i % 3) == 0) {
-      println("Fizz")
-    } else if ((i % 5) == 0) {
-      println("Buzz")
+  (1 to 100).foreach(arg =>
+    if (arg % 3 == 0) {
+      println("FIZZ")
+    } else if (arg % 5 == 0) {
+      println("BUZZ")
     } else {
-      println(i)
+      println(arg)
     }
-  }
+  )
 
 
 }
